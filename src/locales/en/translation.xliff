@@ -1,0 +1,88 @@
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en" trgLang="en">
+  <file id="translation">
+    <unit id="description.part1">
+      <segment>
+        <source>To get started, edit &lt;1&gt;src/App.js&lt;/1&gt; and save to reload.</source>
+        <target>To get started, edit &lt;1&gt;src/App.js&lt;/1&gt; and save to reload.</target>
+      </segment>
+    </unit>
+    <unit id="description.part2">
+      <segment>
+        <source>Switch language between english and german using buttons above.</source>
+        <target>Switch language between english and german using buttons above.</target>
+      </segment>
+    </unit>
+    <unit id="dp_all_all_greatMinds">
+      <segment>
+        <source>GREAT MINDS Update!</source>
+        <target>GREAT MINDS Update!</target>
+      </segment>
+    </unit>
+    <unit id="dp_all_flow_description">
+      <segment>
+        <source>In module 3, use the unit of ten to make easier problems by decomposing addends and grouping them in any order. They intuitively apply the associative and commutative properties and then learn how they can use strategies such as counting on, making ten, taking from ten, subtracting to get to a ten, and relating operations to break down larger addition and subtraction problems.</source>
+        <target>In module 3, use the unit of ten to make easier problems by decomposing addends and grouping them in any order. They intuitively apply the associative and commutative properties and then learn how they can use strategies such as counting on, making ten, taking from ten, subtracting to get to a ten, and relating operations to break down larger addition and subtraction problems.</target>
+      </segment>
+    </unit>
+    <unit id="dp_all_flow_general">
+      <segment>
+        <source>General!</source>
+        <target>General!</target>
+      </segment>
+    </unit>
+    <unit id="dp_all_flow_level1_module3">
+      <segment>
+        <source>Level 1 | Module 3</source>
+        <target>Level 1 | Module 3</target>
+      </segment>
+    </unit>
+    <unit id="dp_all_flow_properties">
+      <segment>
+        <source>Properties of Operations to Make Easier Problems</source>
+        <target>Properties of Operations to Make Easier Problems</target>
+      </segment>
+    </unit>
+    <unit id="dp_all_flow_topics_lessons">
+      <segment>
+        <source>5 TOPICS   26 LESSONS</source>
+        <target>5 TOPICS   26 LESSONS</target>
+      </segment>
+    </unit>
+    <unit id="dp_all_flow_upNext">
+      <segment>
+        <source>Up Next</source>
+        <target>Up Next</target>
+      </segment>
+    </unit>
+    <unit id="dp_explr_action_curriculumDrpDwnBtn">
+      <segment>
+        <source>Curriculum</source>
+        <target>Curriculum</target>
+      </segment>
+    </unit>
+    <unit id="dp_explr_action_levelDrpDwnBtn">
+      <segment>
+        <source>Level</source>
+        <target>Level</target>
+      </segment>
+    </unit>
+    <unit id="dp_explr_action_moduleButton">
+      <segment>
+        <source>Module</source>
+        <target>Module</target>
+      </segment>
+    </unit>
+    <unit id="dp_explr_stage_teachSubHeadingLabel">
+      <segment>
+        <source>Teach</source>
+        <target>Teach</target>
+      </segment>
+    </unit>
+    <unit id="title">
+      <segment>
+        <source>Welcome to React</source>
+        <target>Welcome to React</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>
