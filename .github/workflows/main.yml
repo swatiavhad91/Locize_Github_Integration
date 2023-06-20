@@ -21,7 +21,7 @@ jobs:
   test2:
     name: Test2 (conditional step)
     if: github.event.client_payload.payload.version == 'latest'
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
       - run: 'echo "field: ${{ github.event.client_payload.payload.version }}"'
