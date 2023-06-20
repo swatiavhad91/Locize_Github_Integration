@@ -4,7 +4,7 @@ on:
   repository_dispatch:
     types: [locize/versionPublished]
     with:
-     project-id: ${{ secrets.1ad6f6ce-50cf-4848-ab09-81cc6e120177 }}
+     project-id: 1ad6f6ce-50cf-4848-ab09-81cc6e120177
 
 jobs:
   test1:
