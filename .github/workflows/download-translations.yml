@@ -6,4 +6,4 @@ on:
     types: [locize/versionPublished]
     uses: locize/download@v1
     with:
-    project-id: 1ad6f6ce-50cf-4848-ab09-81cc6e120177
+    project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
