@@ -1,0 +1,16 @@
+name: 'Download translations'
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: SimpleLocalize Download
+        uses: simplelocalize/download@2.0
+        with:
+          apiKey: 8486d121-63d7-4063-aaf1-c7f40a6180e3
+          downloadPath: ./locales/de/Trial.json
+          downloadFormat: json
