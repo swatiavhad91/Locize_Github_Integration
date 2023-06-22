@@ -1,1 +1,28 @@
+on:
+  push:
+    branches: [master]
+  repository_dispatch:
+    types: [locize/versionPublished]
 
+jobs:
+  test1:
+    name: Test1 (conditional run)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+        with:
+         project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
+         apiKey: 7fd1b519-a115-4cd0-9465-28f4dbc3e920
+      - run: 'echo "field: ${{ github.event.client_payload.payload.version }}"'
+      - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+      - run: echo baz
+        if: github.event.client_payload.payload.version == 'latest'
+     
+  test2:
+    name: Test2 (conditional step)
+    if: github.event.client_payload.payload.version == 'latest'
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: 'echo "field: ${{ github.event.client_payload.payload.version }}"'
+      - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
