@@ -11,9 +11,9 @@ jobs:
     steps:
       - uses: locize/download@v1
         with:
-         project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
          url: "https://api.locize.app/95050b13-fe3a-4288-bfe3-e40eaf11b82b/latest/en/translation"
-         path: /public
+         target: /public
+         auto-match: true
       - run: 'echo "field: ${{ github.event.client_payload.payload.version }}"'
       - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
       - run: echo baz
