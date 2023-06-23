@@ -1,0 +1,15 @@
+name: 'download translations'
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Test1 (conditional run)
+        uses: locize/download@v1
+        with:
+          apiKey:7fd1b519-a115-4cd0-9465-28f4dbc3e920
+          downloadFormat: single-language-json
