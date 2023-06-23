@@ -12,4 +12,4 @@ jobs:
         uses: locize/download@v1
         with:
           apiKey:7fd1b519-a115-4cd0-9465-28f4dbc3e920
-          downloadFormat: single-language-json
+      
