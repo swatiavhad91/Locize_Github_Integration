@@ -12,6 +12,7 @@ jobs:
       - uses: locize/download@v1
         with:
          project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
+      - run: 'echo "/Users/runner/work/_actions/locize/download/v1" '   
       - run: 'echo "download.sh"'   
       - run: 'echo "field: ${{ github.event.client_payload.payload.version }}"'
       - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
