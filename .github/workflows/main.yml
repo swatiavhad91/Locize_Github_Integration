@@ -6,10 +6,11 @@ on:
 
 jobs:
   test1:
-    name: Test1 (conditional run)
+    name: Test1
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: locize/download@v1
         with:
          project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
          apiKey: 7fd1b519-a115-4cd0-9465-28f4dbc3e920
