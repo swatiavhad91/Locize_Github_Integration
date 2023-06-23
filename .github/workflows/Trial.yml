@@ -7,7 +7,6 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v1
       - name: Test1 (conditional run)
         uses: locize/download@v1
         with:
