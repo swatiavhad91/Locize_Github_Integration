@@ -12,6 +12,7 @@ jobs:
       - uses: locize/download@v1
         with:
          project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
+         repository: "swatiavhad91/Locize_Github_Integration"
       - run: 'echo "field: ${{ github.event.client_payload.payload.version }}"'
       - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
       - run: echo baz
