@@ -1,0 +1,12 @@
+ hello_world_job:
+    runs-on: ubuntu-latest
+    name: test download action
+    steps:
+      - uses: actions/checkout@v3
+      - uses: locize/download@v1
+        with:
+          project-id: ${{ secrets.LOCIZE_PROJECT_ID }}
+          format: yaml
+      - run: ls -al locales/en
+        shell: bash
+      - run: ls -al
