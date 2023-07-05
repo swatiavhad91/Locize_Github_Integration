@@ -1,1 +1,19 @@
+name: 'download translations'
+on:
+  push:
+    branches: [ master ]
 
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Test1 (conditional run)
+      - uses: actions/checkout@v3
+      - uses: locize/download@v1
+        with:
+          project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
+          api-key: 7fd1b519-a115-4cd0-9465-28f4dbc3e920
+          format: yaml
+      - run: ls -al locales/en
+        shell: bash
+      - run: ls -al
