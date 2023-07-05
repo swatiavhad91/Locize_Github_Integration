@@ -13,5 +13,4 @@ jobs:
           project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
           format: yaml
       - run: ls -al locales/en
-        shell: bash
-      - run: ls -al
+ 
