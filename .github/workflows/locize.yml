@@ -8,7 +8,6 @@ jobs:
     runs-on: macos
     name: test download action
     steps:
-      - uses: actions/checkout@v3
       - uses: locize/download@v1
         with:
           project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
