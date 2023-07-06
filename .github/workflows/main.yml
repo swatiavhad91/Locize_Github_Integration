@@ -23,6 +23,8 @@ jobs:
       - uses: actions/checkout@master
       - uses: actions-js/push@master
         with:
+         persist-credentials: false 
+         fetch-depth: 0 
          github_token: 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
      
  
