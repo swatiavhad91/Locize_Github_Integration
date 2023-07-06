@@ -17,11 +17,10 @@ jobs:
          api-key: 7fd1b519-a115-4cd0-9465-28f4dbc3e920
          
   test1:
-     name: Test1
+     name: Commit & Push changes
      runs-on: macos-latest
      steps:
       - uses: actions/checkout@master
-      - name: Commit & Push changes
       - uses: actions-js/push@master
         with:
          github_token: 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
