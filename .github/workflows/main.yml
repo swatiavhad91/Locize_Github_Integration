@@ -27,6 +27,6 @@ jobs:
       - name: Commit & Push changes
         uses: actions-js/push@master
         with:
-         project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
+         github_token: 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
          run: git push origin master
          
