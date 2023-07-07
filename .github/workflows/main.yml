@@ -7,8 +7,8 @@ on:
 jobs:
  
       
-  test3:
-    name: Test3
+  test1:
+    name: Test1
     runs-on: macos-latest
     steps:
       - uses: locize/download@v1
@@ -16,16 +16,17 @@ jobs:
          project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
          api-key: 7fd1b519-a115-4cd0-9465-28f4dbc3e920
          
-  test1:
+  test2:
      name: Commit & Push changes
      runs-on: macos-latest
      steps:
       - uses: actions/checkout@master
-      - uses: actions-js/push@master
         with:
-         persist-credentials: false 
-         fetch-depth: 0 
-         github_token: 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
-     
- 
+         persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token
+         fetch-depth: 0 # otherwise, you will failed to push refs to dest repo        
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+         project-id: 95050b13-fe3a-4288-bfe3-e40eaf11b82b
+         run: git push origin master
          
